@@ -1,5 +1,5 @@
 {
-  "name": "vite-typescript-starter",
+  "name": "swgc-tailwind-css-cheat-sheet",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,7 +20,7 @@
     "vanjs-core": "^1.5.0",
     "vite": "^5.2.11"
   },
-  "description": "[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/swgc-shota/tw-cheatsheet)",
+  "description": "This is a cheat sheet of default class names for Tailwind CSS, complete with a simple playground to test the styling.",
   "main": "postcss.config.js",
   "author": "",
   "license": "ISC"
