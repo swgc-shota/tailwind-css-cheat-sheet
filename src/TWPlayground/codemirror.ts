@@ -2,11 +2,9 @@ import { basicSetup } from "codemirror";
 import { html } from "@codemirror/lang-html";
 import { EditorView, keymap } from "@codemirror/view";
 import { autocompletion, completionKeymap } from "@codemirror/autocomplete";
-//import { twCompletions } from "./codemirrorCompletions";
 import { State } from "vanjs-core";
 import { debouncer } from "../utils";
 import { initCMThemeToggler, initialTheme } from "./codemirrorThemes";
-//import { letsTW } from "./tailwindcss.js";
 import initialContent from "./initialContent.html?raw";
 
 const stringToDoc = (htmlString: string): Document => {
