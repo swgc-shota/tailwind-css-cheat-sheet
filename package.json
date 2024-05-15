@@ -11,7 +11,6 @@
   "devDependencies": {
     "@codemirror/lang-html": "^6.4.9",
     "@codemirror/theme-one-dark": "^6.1.2",
-    "@vitejs/plugin-basic-ssl": "^1.1.0",
     "autoprefixer": "^10.4.19",
     "codemirror": "^6.0.1",
     "postcss": "^8.4.38",
