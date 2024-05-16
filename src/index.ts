@@ -6,7 +6,7 @@ import { initClassNameFinder } from "./ClassNameFinder/ClassNameFinder";
 import { initLazyShowing } from "./utils";
 import { initCopyClassName } from "./utils";
 import { initThemeToggler } from "./Common/ThemeToggler";
-import "./main.css";
+import "./index.css";
 
 const switchContainer = document.querySelector(
   ".view-switch-container"
