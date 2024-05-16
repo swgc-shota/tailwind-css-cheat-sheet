@@ -2,7 +2,13 @@ import fs from "fs";
 import { defineConfig, loadEnv } from "vite";
 export default defineConfig(({ command }) => {
   const env = loadEnv("", process.cwd(), "");
-  const config = { root: "src" };
+  const config = { 
+    root: "src",
+    build: {
+      outDir: "../dist",
+      emptyOutDir: true, // このオプションを追加
+    },
+ };
 
   if (command === "build") {
     if (env.VITE_BASE_PATH !== undefined) {
