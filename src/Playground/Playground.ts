@@ -12,7 +12,7 @@ const updateIFrame = (iframe: HTMLIFrameElement, content: string) => {
   iframe.src = url;
 };
 
-export const TWPlayground = () => {
+export const Playground = () => {
   const htmlContent = van.state("");
   const EditorContainer = div({
     id: "editor-container",
