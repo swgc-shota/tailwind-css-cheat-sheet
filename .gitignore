@@ -25,4 +25,5 @@ dist-ssr
 
 # mics
 certs
+.env
 *.code-workspace
