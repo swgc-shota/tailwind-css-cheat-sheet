@@ -26,4 +26,3 @@ dist-ssr
 # mics
 certs
 *.code-workspace
-vite.config.js
