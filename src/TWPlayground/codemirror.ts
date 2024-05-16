@@ -11,7 +11,7 @@ const stringToDoc = (htmlString: string): Document => {
   const isLightMode = document.querySelector("html.dark") === null;
   const parser = new DOMParser();
   const mydoc = parser.parseFromString(
-    `<html class="${
+    `<!DOCTYPE html><html class="${
       isLightMode ? "" : "dark"
     }"><head><meta charset="utf-8"></head>${htmlString}</html>`,
     "text/html"
