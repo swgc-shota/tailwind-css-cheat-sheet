@@ -23,7 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# mics
+# Miscs
 certs
-.env
 *.code-workspace
+.env
