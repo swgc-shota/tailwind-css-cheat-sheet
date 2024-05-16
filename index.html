@@ -288,19 +288,15 @@
           >
             <div class="content-box">
               <h3>親要素の状態に基づくスタイリング</h3>
-
               <p>
                 親要素の状態に基づいて子要素をスタイリングしたいときは、親要素に<code>group</code>クラスをつけた上で、子要素に<code>group-状態:任意のクラス名</code>を指定する。
               </p>
-
               <p>
                 また、グループには<code>group/グループ名</code>という形で名前をつけることができる。グループをネストする場合は、<code>group-状態/グループ名:任意のクラス名</code>という形にする。
               </p>
-
               <p>
                 親要素に指定されたセレクターに基づいて子要素をスタイリングしたいときは、<code>group-[任意のセレクター]</code>という形でクラスを指定する。
               </p>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state"
@@ -312,19 +308,15 @@
             </div>
             <div class="content-box">
               <h3>兄弟要素の状態に基づくスタイリング</h3>
-
               <p>
                 兄弟要素の状態に基づいて要素をスタイリングしたいときは、兄要素に<code>peer</code>クラスをつけた上で、弟要素に<code>peer-状態:任意のクラス名</code>を指定する（例:<code>peer-invalid:bg-red-500</code>）。
               </p>
-
               <p>
                 また、兄弟には<code>peer/兄弟名</code>という形で名前をつけることができる。兄弟名って何だ。でもピア名とするよりはましだ。複数の兄弟たちを使いわけたいときは、<code>peer-状態/兄弟名:任意のクラス名</code>という形にする。
               </p>
-
               <p>
                 兄要素に指定されたセレクターに基づいて子要素をスタイリングしたいときは、<code>peer-[任意のセレクター]</code>という形で兄弟名を指定する。
               </p>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state"
@@ -336,13 +328,10 @@
             </div>
             <div class="content-box">
               <h3>直下の子要素に対するスタイリング</h3>
-
               <p>
                 直下の子要素のスタイルをまとめて指定したいときは、<code>*:任意のクラス名</code>という形を使う。これを指定すると、子要素にクラスを指定しても機能しない。注意したい。
               </p>
-
               <p>なお、Tailwind CSSは、CSSの[継承プロパティ](</p>
-
               <p>
                 参考元：<br /><a
                   href="https://web.dev/learn/css/inheritance#which_properties_are_inherited_by_default)と非継承プロパティをそのまま踏襲している（たぶん）。"
@@ -351,7 +340,6 @@
                   >https://web.dev/learn/css/inheritance#which_properties_are_inherited_by_default)と非継承プロパティをそのまま踏襲している（たぶん）。</a
                 >
               </p>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/hover-focus-and-other-states#styling-direct-children"
@@ -363,11 +351,9 @@
             </div>
             <div class="content-box">
               <h3>子孫の有無・状態に基づくスタイリング</h3>
-
               <p>
                 子孫の有無に基づいて要素をスタイリングしたいときは、<code>has-[セレクター]:任意のクラス名</code>という形を使う。
               </p>
-
               ​
               <p>
                 参考元：<br /><a
@@ -380,7 +366,6 @@
             </div>
             <div class="content-box">
               <h3>グループの子孫の有無・状態に基づくスタイリング</h3>
-
               <p>
                 グループに特定の子孫がいるかどうかに基づいてスタイリングしたいときは、親要素に<code>group</code>、対象の要素に<code>group-has-[セレクター]:任意のクラス名</code>を指定する。
               </p>
@@ -395,11 +380,9 @@
             </div>
             <div class="content-box">
               <h3>兄弟要素の子孫の有無・状態に基づくスタイリング</h3>
-
               <p>
                 兄弟要素の子孫の有無・状態に基づいてスタイリングしたいときは、兄要素に<code>peer</code>、弟要素に<code>peer-has-[セレクター]:任意のクラス名</code>を指定する。
               </p>
-
               ​
               <p>
                 参考元：<br /><a
@@ -450,7 +433,6 @@
                   </tr>
                 </tbody>
               </table>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/hover-focus-and-other-states#quick-reference"
@@ -866,10 +848,8 @@
                 >
               </p>
             </div>
-
             <div class="content-box">
               <h3>container</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -904,10 +884,8 @@
                 >
               </p>
             </div>
-
             <div class="content-box">
               <h3>columns</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1035,10 +1013,8 @@
                 >
               </p>
             </div>
-
             <div class="content-box">
               <h3>break after</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1094,10 +1070,8 @@
                 >
               </p>
             </div>
-
             <div class="content-box">
               <h3>break before</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1153,10 +1127,8 @@
                 >
               </p>
             </div>
-
             <div class="content-box">
               <h3>break inside</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1196,10 +1168,8 @@
                 >
               </p>
             </div>
-
             <div class="content-box">
               <h3>box decoration break</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1229,10 +1199,8 @@
                 >
               </p>
             </div>
-
             <div class="content-box">
               <h3>box sizing</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1266,7 +1234,6 @@
             </div>
             <div class="content-box">
               <h3>display</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1376,7 +1343,6 @@
             </div>
             <div class="content-box">
               <h3>floats</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1420,9 +1386,8 @@
                 >
               </p>
             </div>
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>clear</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1470,9 +1435,8 @@
                 >
               </p>
             </div>
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>isolation</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1504,9 +1468,8 @@
                 >
               </p>
             </div>
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>object fit</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1550,9 +1513,8 @@
                 >
               </p>
             </div>
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>object position</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1610,9 +1572,8 @@
                 >
               </p>
             </div>
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>overflow</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1696,9 +1657,8 @@
                 >
               </p>
             </div>
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>overscroll behavior</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1756,9 +1716,8 @@
                 >
               </p>
             </div>
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>position</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1802,10 +1761,8 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>start-*</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -1818,260 +1775,174 @@
                     <td>start-0</td>
                     <td>inset-inline-start: 0px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-px</td>
                     <td>inset-inline-start: 1px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-0.5</td>
                     <td>inset-inline-start: 0.125rem; /* 2px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-1</td>
                     <td>inset-inline-start: 0.25rem; /* 4px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-1.5</td>
                     <td>inset-inline-start: 0.375rem; /* 6px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-10</td>
                     <td>inset-inline-start: 2.5rem; /* 40px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-11</td>
                     <td>inset-inline-start: 2.75rem; /* 44px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-12</td>
                     <td>inset-inline-start: 3rem; /* 48px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-14</td>
                     <td>inset-inline-start: 3.5rem; /* 56px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-16</td>
                     <td>inset-inline-start: 4rem; /* 64px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-2</td>
                     <td>inset-inline-start: 0.5rem; /* 8px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-2.5</td>
                     <td>inset-inline-start: 0.625rem; /* 10px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-20</td>
                     <td>inset-inline-start: 5rem; /* 80px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-24</td>
                     <td>inset-inline-start: 6rem; /* 96px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-28</td>
                     <td>inset-inline-start: 7rem; /* 112px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-3</td>
                     <td>inset-inline-start: 0.75rem; /* 12px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-3.5</td>
                     <td>inset-inline-start: 0.875rem; /* 14px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-32</td>
                     <td>inset-inline-start: 8rem; /* 128px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-36</td>
                     <td>inset-inline-start: 9rem; /* 144px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-4</td>
                     <td>inset-inline-start: 1rem; /* 16px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-40</td>
                     <td>inset-inline-start: 10rem; /* 160px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-44</td>
                     <td>inset-inline-start: 11rem; /* 176px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-48</td>
                     <td>inset-inline-start: 12rem; /* 192px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-5</td>
                     <td>inset-inline-start: 1.25rem; /* 20px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-52</td>
                     <td>inset-inline-start: 13rem; /* 208px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-56</td>
                     <td>inset-inline-start: 14rem; /* 224px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-6</td>
                     <td>inset-inline-start: 1.5rem; /* 24px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-60</td>
                     <td>inset-inline-start: 15rem; /* 240px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-64</td>
                     <td>inset-inline-start: 16rem; /* 256px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-7</td>
                     <td>inset-inline-start: 1.75rem; /* 28px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-72</td>
                     <td>inset-inline-start: 18rem; /* 288px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-8</td>
                     <td>inset-inline-start: 2rem; /* 32px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-80</td>
                     <td>inset-inline-start: 20rem; /* 320px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-9</td>
                     <td>inset-inline-start: 2.25rem; /* 36px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-96</td>
                     <td>inset-inline-start: 24rem; /* 384px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-auto</td>
                     <td>inset-inline-start: auto;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-1/2</td>
                     <td>inset-inline-start: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-1/3</td>
                     <td>inset-inline-start: 33.333333%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-2/3</td>
                     <td>inset-inline-start: 66.666667%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-1/4</td>
                     <td>inset-inline-start: 25%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-2/4</td>
                     <td>inset-inline-start: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-3/4</td>
                     <td>inset-inline-start: 75%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>start-full</td>
                     <td>inset-inline-start: 100%;</td>
                   </tr>
-
-                  <tr></tr>
                 </tbody>
               </table>
               <p>
@@ -2081,10 +1952,8 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>end</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -2097,260 +1966,174 @@
                     <td>end-0</td>
                     <td>inset-inline-end: 0px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-px</td>
                     <td>inset-inline-end: 1px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-0.5</td>
                     <td>inset-inline-end: 0.125rem; /* 2px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-1</td>
                     <td>inset-inline-end: 0.25rem; /* 4px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-1.5</td>
                     <td>inset-inline-end: 0.375rem; /* 6px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-10</td>
                     <td>inset-inline-end: 2.5rem; /* 40px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-11</td>
                     <td>inset-inline-end: 2.75rem; /* 44px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-12</td>
                     <td>inset-inline-end: 3rem; /* 48px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-14</td>
                     <td>inset-inline-end: 3.5rem; /* 56px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-16</td>
                     <td>inset-inline-end: 4rem; /* 64px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-2</td>
                     <td>inset-inline-end: 0.5rem; /* 8px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-2.5</td>
                     <td>inset-inline-end: 0.625rem; /* 10px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-20</td>
                     <td>inset-inline-end: 5rem; /* 80px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-24</td>
                     <td>inset-inline-end: 6rem; /* 96px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-28</td>
                     <td>inset-inline-end: 7rem; /* 112px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-3</td>
                     <td>inset-inline-end: 0.75rem; /* 12px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-3.5</td>
                     <td>inset-inline-end: 0.875rem; /* 14px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-32</td>
                     <td>inset-inline-end: 8rem; /* 128px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-36</td>
                     <td>inset-inline-end: 9rem; /* 144px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-4</td>
                     <td>inset-inline-end: 1rem; /* 16px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-40</td>
                     <td>inset-inline-end: 10rem; /* 160px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-44</td>
                     <td>inset-inline-end: 11rem; /* 176px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-48</td>
                     <td>inset-inline-end: 12rem; /* 192px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-5</td>
                     <td>inset-inline-end: 1.25rem; /* 20px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-52</td>
                     <td>inset-inline-end: 13rem; /* 208px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-56</td>
                     <td>inset-inline-end: 14rem; /* 224px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-6</td>
                     <td>inset-inline-end: 1.5rem; /* 24px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-60</td>
                     <td>inset-inline-end: 15rem; /* 240px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-64</td>
                     <td>inset-inline-end: 16rem; /* 256px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-7</td>
                     <td>inset-inline-end: 1.75rem; /* 28px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-72</td>
                     <td>inset-inline-end: 18rem; /* 288px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-8</td>
                     <td>inset-inline-end: 2rem; /* 32px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-80</td>
                     <td>inset-inline-end: 20rem; /* 320px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-9</td>
                     <td>inset-inline-end: 2.25rem; /* 36px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-96</td>
                     <td>inset-inline-end: 24rem; /* 384px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-auto</td>
                     <td>inset-inline-end: auto;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-1/2</td>
                     <td>inset-inline-end: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-1/3</td>
                     <td>inset-inline-end: 33.333333%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-2/3</td>
                     <td>inset-inline-end: 66.666667%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-1/4</td>
                     <td>inset-inline-end: 25%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-2/4</td>
                     <td>inset-inline-end: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-3/4</td>
                     <td>inset-inline-end: 75%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>end-full</td>
                     <td>inset-inline-end: 100%;</td>
                   </tr>
-
-                  <tr></tr>
                 </tbody>
               </table>
               <p>
@@ -2360,10 +2143,8 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>inset</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -2376,260 +2157,174 @@
                     <td>inset-0</td>
                     <td>inset: 0px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-px</td>
                     <td>inset: 1px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-0.5</td>
                     <td>inset: 0.125rem; /* 2px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-1</td>
                     <td>inset: 0.25rem; /* 4px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-1.5</td>
                     <td>inset: 0.375rem; /* 6px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-10</td>
                     <td>inset: 2.5rem; /* 40px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-11</td>
                     <td>inset: 2.75rem; /* 44px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-12</td>
                     <td>inset: 3rem; /* 48px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-14</td>
                     <td>inset: 3.5rem; /* 56px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-16</td>
                     <td>inset: 4rem; /* 64px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-2</td>
                     <td>inset: 0.5rem; /* 8px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-2.5</td>
                     <td>inset: 0.625rem; /* 10px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-20</td>
                     <td>inset: 5rem; /* 80px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-24</td>
                     <td>inset: 6rem; /* 96px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-28</td>
                     <td>inset: 7rem; /* 112px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-3</td>
                     <td>inset: 0.75rem; /* 12px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-3.5</td>
                     <td>inset: 0.875rem; /* 14px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-32</td>
                     <td>inset: 8rem; /* 128px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-36</td>
                     <td>inset: 9rem; /* 144px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-4</td>
                     <td>inset: 1rem; /* 16px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-40</td>
                     <td>inset: 10rem; /* 160px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-44</td>
                     <td>inset: 11rem; /* 176px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-48</td>
                     <td>inset: 12rem; /* 192px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-5</td>
                     <td>inset: 1.25rem; /* 20px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-52</td>
                     <td>inset: 13rem; /* 208px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-56</td>
                     <td>inset: 14rem; /* 224px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-6</td>
                     <td>inset: 1.5rem; /* 24px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-60</td>
                     <td>inset: 15rem; /* 240px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-64</td>
                     <td>inset: 16rem; /* 256px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-7</td>
                     <td>inset: 1.75rem; /* 28px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-72</td>
                     <td>inset: 18rem; /* 288px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-8</td>
                     <td>inset: 2rem; /* 32px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-80</td>
                     <td>inset: 20rem; /* 320px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-9</td>
                     <td>inset: 2.25rem; /* 36px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-96</td>
                     <td>inset: 24rem; /* 384px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-auto</td>
                     <td>inset: auto;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-1/2</td>
                     <td>inset: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-1/3</td>
                     <td>inset: 33.333333%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-2/3</td>
                     <td>inset: 66.666667%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-1/4</td>
                     <td>inset: 25%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-2/4</td>
                     <td>inset: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-3/4</td>
                     <td>inset: 75%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-full</td>
                     <td>inset: 100%;</td>
                   </tr>
-
-                  <tr></tr>
                 </tbody>
               </table>
               <p>
@@ -2639,10 +2334,8 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>inset-x-*</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -2655,278 +2348,192 @@
                     <td>inset-x-0</td>
                     <td>left: 0px; right: 0px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-px</td>
                     <td>left: 1px; right: 1px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-0.5</td>
                     <td>
                       left: 0.125rem; /* 2px */ right: 0.125rem; /* 2px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-1</td>
                     <td>left: 0.25rem; /* 4px */ right: 0.25rem; /* 4px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-1.5</td>
                     <td>
                       left: 0.375rem; /* 6px */ right: 0.375rem; /* 6px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-10</td>
                     <td>left: 2.5rem; /* 40px */ right: 2.5rem; /* 40px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-11</td>
                     <td>
                       left: 2.75rem; /* 44px */ right: 2.75rem; /* 44px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-12</td>
                     <td>left: 3rem; /* 48px */ right: 3rem; /* 48px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-14</td>
                     <td>left: 3.5rem; /* 56px */ right: 3.5rem; /* 56px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-16</td>
                     <td>left: 4rem; /* 64px */ right: 4rem; /* 64px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-2</td>
                     <td>left: 0.5rem; /* 8px */ right: 0.5rem; /* 8px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-2.5</td>
                     <td>
                       left: 0.625rem; /* 10px */ right: 0.625rem; /* 10px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-20</td>
                     <td>left: 5rem; /* 80px */ right: 5rem; /* 80px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-24</td>
                     <td>left: 6rem; /* 96px */ right: 6rem; /* 96px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-28</td>
                     <td>left: 7rem; /* 112px */ right: 7rem; /* 112px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-3</td>
                     <td>
                       left: 0.75rem; /* 12px */ right: 0.75rem; /* 12px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-3.5</td>
                     <td>
                       left: 0.875rem; /* 14px */ right: 0.875rem; /* 14px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-32</td>
                     <td>left: 8rem; /* 128px */ right: 8rem; /* 128px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-36</td>
                     <td>left: 9rem; /* 144px */ right: 9rem; /* 144px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-4</td>
                     <td>left: 1rem; /* 16px */ right: 1rem; /* 16px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-40</td>
                     <td>left: 10rem; /* 160px */ right: 10rem; /* 160px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-44</td>
                     <td>left: 11rem; /* 176px */ right: 11rem; /* 176px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-48</td>
                     <td>left: 12rem; /* 192px */ right: 12rem; /* 192px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-5</td>
                     <td>
                       left: 1.25rem; /* 20px */ right: 1.25rem; /* 20px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-52</td>
                     <td>left: 13rem; /* 208px */ right: 13rem; /* 208px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-56</td>
                     <td>left: 14rem; /* 224px */ right: 14rem; /* 224px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-6</td>
                     <td>left: 1.5rem; /* 24px */ right: 1.5rem; /* 24px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-60</td>
                     <td>left: 15rem; /* 240px */ right: 15rem; /* 240px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-64</td>
                     <td>left: 16rem; /* 256px */ right: 16rem; /* 256px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-7</td>
                     <td>
                       left: 1.75rem; /* 28px */ right: 1.75rem; /* 28px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-72</td>
                     <td>left: 18rem; /* 288px */ right: 18rem; /* 288px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-8</td>
                     <td>left: 2rem; /* 32px */ right: 2rem; /* 32px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-80</td>
                     <td>left: 20rem; /* 320px */ right: 20rem; /* 320px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-9</td>
                     <td>
                       left: 2.25rem; /* 36px */ right: 2.25rem; /* 36px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-96</td>
                     <td>left: 24rem; /* 384px */ right: 24rem; /* 384px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-auto</td>
                     <td>left: auto; right: auto;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-1/2</td>
                     <td>left: 50%; right: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-1/3</td>
                     <td>left: 33.333333%; right: 33.333333%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-2/3</td>
                     <td>left: 66.666667%; right: 66.666667%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-1/4</td>
                     <td>left: 25%; right: 25%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-2/4</td>
                     <td>left: 50%; right: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-3/4</td>
                     <td>left: 75%; right: 75%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-x-full</td>
                     <td>left: 100%; right: 100%;</td>
                   </tr>
-
-                  <tr></tr>
                 </tbody>
               </table>
               <p>
@@ -2936,10 +2543,8 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>inset-y-*</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -2952,278 +2557,192 @@
                     <td>inset-y-0</td>
                     <td>top: 0px; bottom: 0px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-px</td>
                     <td>top: 1px; bottom: 1px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-0.5</td>
                     <td>
                       top: 0.125rem; /* 2px */ bottom: 0.125rem; /* 2px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-1</td>
                     <td>top: 0.25rem; /* 4px */ bottom: 0.25rem; /* 4px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-1.5</td>
                     <td>
                       top: 0.375rem; /* 6px */ bottom: 0.375rem; /* 6px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-10</td>
                     <td>top: 2.5rem; /* 40px */ bottom: 2.5rem; /* 40px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-11</td>
                     <td>
                       top: 2.75rem; /* 44px */ bottom: 2.75rem; /* 44px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-12</td>
                     <td>top: 3rem; /* 48px */ bottom: 3rem; /* 48px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-14</td>
                     <td>top: 3.5rem; /* 56px */ bottom: 3.5rem; /* 56px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-16</td>
                     <td>top: 4rem; /* 64px */ bottom: 4rem; /* 64px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-2</td>
                     <td>top: 0.5rem; /* 8px */ bottom: 0.5rem; /* 8px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-2.5</td>
                     <td>
                       top: 0.625rem; /* 10px */ bottom: 0.625rem; /* 10px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-20</td>
                     <td>top: 5rem; /* 80px */ bottom: 5rem; /* 80px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-24</td>
                     <td>top: 6rem; /* 96px */ bottom: 6rem; /* 96px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-28</td>
                     <td>top: 7rem; /* 112px */ bottom: 7rem; /* 112px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-3</td>
                     <td>
                       top: 0.75rem; /* 12px */ bottom: 0.75rem; /* 12px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-3.5</td>
                     <td>
                       top: 0.875rem; /* 14px */ bottom: 0.875rem; /* 14px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-32</td>
                     <td>top: 8rem; /* 128px */ bottom: 8rem; /* 128px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-36</td>
                     <td>top: 9rem; /* 144px */ bottom: 9rem; /* 144px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-4</td>
                     <td>top: 1rem; /* 16px */ bottom: 1rem; /* 16px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-40</td>
                     <td>top: 10rem; /* 160px */ bottom: 10rem; /* 160px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-44</td>
                     <td>top: 11rem; /* 176px */ bottom: 11rem; /* 176px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-48</td>
                     <td>top: 12rem; /* 192px */ bottom: 12rem; /* 192px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-5</td>
                     <td>
                       top: 1.25rem; /* 20px */ bottom: 1.25rem; /* 20px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-52</td>
                     <td>top: 13rem; /* 208px */ bottom: 13rem; /* 208px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-56</td>
                     <td>top: 14rem; /* 224px */ bottom: 14rem; /* 224px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-6</td>
                     <td>top: 1.5rem; /* 24px */ bottom: 1.5rem; /* 24px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-60</td>
                     <td>top: 15rem; /* 240px */ bottom: 15rem; /* 240px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-64</td>
                     <td>top: 16rem; /* 256px */ bottom: 16rem; /* 256px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-7</td>
                     <td>
                       top: 1.75rem; /* 28px */ bottom: 1.75rem; /* 28px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-72</td>
                     <td>top: 18rem; /* 288px */ bottom: 18rem; /* 288px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-8</td>
                     <td>top: 2rem; /* 32px */ bottom: 2rem; /* 32px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-80</td>
                     <td>top: 20rem; /* 320px */ bottom: 20rem; /* 320px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-9</td>
                     <td>
                       top: 2.25rem; /* 36px */ bottom: 2.25rem; /* 36px */
                     </td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-96</td>
                     <td>top: 24rem; /* 384px */ bottom: 24rem; /* 384px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-auto</td>
                     <td>top: auto; bottom: auto;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-1/2</td>
                     <td>top: 50%; bottom: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-1/3</td>
                     <td>top: 33.333333%; bottom: 33.333333%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-2/3</td>
                     <td>top: 66.666667%; bottom: 66.666667%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-1/4</td>
                     <td>top: 25%; bottom: 25%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-2/4</td>
                     <td>top: 50%; bottom: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-3/4</td>
                     <td>top: 75%; bottom: 75%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>inset-y-full</td>
                     <td>top: 100%; bottom: 100%;</td>
                   </tr>
-
-                  <tr></tr>
                 </tbody>
               </table>
               <p>
@@ -3233,10 +2752,8 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>top</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -3249,260 +2766,174 @@
                     <td>top-0</td>
                     <td>top: 0px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-px</td>
                     <td>top: 1px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-0.5</td>
                     <td>top: 0.125rem; /* 2px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-1</td>
                     <td>top: 0.25rem; /* 4px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-1.5</td>
                     <td>top: 0.375rem; /* 6px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-10</td>
                     <td>top: 2.5rem; /* 40px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-11</td>
                     <td>top: 2.75rem; /* 44px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-12</td>
                     <td>top: 3rem; /* 48px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-14</td>
                     <td>top: 3.5rem; /* 56px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-16</td>
                     <td>top: 4rem; /* 64px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-2</td>
                     <td>top: 0.5rem; /* 8px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-2.5</td>
                     <td>top: 0.625rem; /* 10px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-20</td>
                     <td>top: 5rem; /* 80px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-24</td>
                     <td>top: 6rem; /* 96px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-28</td>
                     <td>top: 7rem; /* 112px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-3</td>
                     <td>top: 0.75rem; /* 12px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-3.5</td>
                     <td>top: 0.875rem; /* 14px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-32</td>
                     <td>top: 8rem; /* 128px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-36</td>
                     <td>top: 9rem; /* 144px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-4</td>
                     <td>top: 1rem; /* 16px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-40</td>
                     <td>top: 10rem; /* 160px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-44</td>
                     <td>top: 11rem; /* 176px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-48</td>
                     <td>top: 12rem; /* 192px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-5</td>
                     <td>top: 1.25rem; /* 20px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-52</td>
                     <td>top: 13rem; /* 208px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-56</td>
                     <td>top: 14rem; /* 224px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-6</td>
                     <td>top: 1.5rem; /* 24px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-60</td>
                     <td>top: 15rem; /* 240px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-64</td>
                     <td>top: 16rem; /* 256px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-7</td>
                     <td>top: 1.75rem; /* 28px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-72</td>
                     <td>top: 18rem; /* 288px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-8</td>
                     <td>top: 2rem; /* 32px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-80</td>
                     <td>top: 20rem; /* 320px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-9</td>
                     <td>top: 2.25rem; /* 36px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-96</td>
                     <td>top: 24rem; /* 384px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-auto</td>
                     <td>top: auto;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-1/2</td>
                     <td>top: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-1/3</td>
                     <td>top: 33.333333%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-2/3</td>
                     <td>top: 66.666667%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-1/4</td>
                     <td>top: 25%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-2/4</td>
                     <td>top: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-3/4</td>
                     <td>top: 75%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>top-full</td>
                     <td>top: 100%;</td>
                   </tr>
-
-                  <tr></tr>
                 </tbody>
               </table>
               <p>
@@ -3512,10 +2943,8 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>right</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -3528,260 +2957,174 @@
                     <td>right-0</td>
                     <td>right: 0px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-px</td>
                     <td>right: 1px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-0.5</td>
                     <td>right: 0.125rem; /* 2px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-1</td>
                     <td>right: 0.25rem; /* 4px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-1.5</td>
                     <td>right: 0.375rem; /* 6px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-10</td>
                     <td>right: 2.5rem; /* 40px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-11</td>
                     <td>right: 2.75rem; /* 44px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-12</td>
                     <td>right: 3rem; /* 48px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-14</td>
                     <td>right: 3.5rem; /* 56px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-16</td>
                     <td>right: 4rem; /* 64px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-2</td>
                     <td>right: 0.5rem; /* 8px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-2.5</td>
                     <td>right: 0.625rem; /* 10px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-20</td>
                     <td>right: 5rem; /* 80px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-24</td>
                     <td>right: 6rem; /* 96px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-28</td>
                     <td>right: 7rem; /* 112px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-3</td>
                     <td>right: 0.75rem; /* 12px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-3.5</td>
                     <td>right: 0.875rem; /* 14px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-32</td>
                     <td>right: 8rem; /* 128px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-36</td>
                     <td>right: 9rem; /* 144px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-4</td>
                     <td>right: 1rem; /* 16px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-40</td>
                     <td>right: 10rem; /* 160px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-44</td>
                     <td>right: 11rem; /* 176px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-48</td>
                     <td>right: 12rem; /* 192px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-5</td>
                     <td>right: 1.25rem; /* 20px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-52</td>
                     <td>right: 13rem; /* 208px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-56</td>
                     <td>right: 14rem; /* 224px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-6</td>
                     <td>right: 1.5rem; /* 24px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-60</td>
                     <td>right: 15rem; /* 240px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-64</td>
                     <td>right: 16rem; /* 256px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-7</td>
                     <td>right: 1.75rem; /* 28px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-72</td>
                     <td>right: 18rem; /* 288px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-8</td>
                     <td>right: 2rem; /* 32px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-80</td>
                     <td>right: 20rem; /* 320px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-9</td>
                     <td>right: 2.25rem; /* 36px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-96</td>
                     <td>right: 24rem; /* 384px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-auto</td>
                     <td>right: auto;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-1/2</td>
                     <td>right: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-1/3</td>
                     <td>right: 33.333333%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-2/3</td>
                     <td>right: 66.666667%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-1/4</td>
                     <td>right: 25%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-2/4</td>
                     <td>right: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-3/4</td>
                     <td>right: 75%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>right-full</td>
                     <td>right: 100%;</td>
                   </tr>
-
-                  <tr></tr>
                 </tbody>
               </table>
               <p>
@@ -3791,10 +3134,8 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>bottom</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -3807,260 +3148,174 @@
                     <td>bottom-0</td>
                     <td>bottom: 0px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-px</td>
                     <td>bottom: 1px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-0.5</td>
                     <td>bottom: 0.125rem; /* 2px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-1</td>
                     <td>bottom: 0.25rem; /* 4px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-1.5</td>
                     <td>bottom: 0.375rem; /* 6px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-10</td>
                     <td>bottom: 2.5rem; /* 40px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-11</td>
                     <td>bottom: 2.75rem; /* 44px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-12</td>
                     <td>bottom: 3rem; /* 48px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-14</td>
                     <td>bottom: 3.5rem; /* 56px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-16</td>
                     <td>bottom: 4rem; /* 64px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-2</td>
                     <td>bottom: 0.5rem; /* 8px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-2.5</td>
                     <td>bottom: 0.625rem; /* 10px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-20</td>
                     <td>bottom: 5rem; /* 80px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-24</td>
                     <td>bottom: 6rem; /* 96px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-28</td>
                     <td>bottom: 7rem; /* 112px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-3</td>
                     <td>bottom: 0.75rem; /* 12px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-3.5</td>
                     <td>bottom: 0.875rem; /* 14px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-32</td>
                     <td>bottom: 8rem; /* 128px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-36</td>
                     <td>bottom: 9rem; /* 144px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-4</td>
                     <td>bottom: 1rem; /* 16px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-40</td>
                     <td>bottom: 10rem; /* 160px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-44</td>
                     <td>bottom: 11rem; /* 176px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-48</td>
                     <td>bottom: 12rem; /* 192px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-5</td>
                     <td>bottom: 1.25rem; /* 20px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-52</td>
                     <td>bottom: 13rem; /* 208px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-56</td>
                     <td>bottom: 14rem; /* 224px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-6</td>
                     <td>bottom: 1.5rem; /* 24px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-60</td>
                     <td>bottom: 15rem; /* 240px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-64</td>
                     <td>bottom: 16rem; /* 256px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-7</td>
                     <td>bottom: 1.75rem; /* 28px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-72</td>
                     <td>bottom: 18rem; /* 288px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-8</td>
                     <td>bottom: 2rem; /* 32px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-80</td>
                     <td>bottom: 20rem; /* 320px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-9</td>
                     <td>bottom: 2.25rem; /* 36px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-96</td>
                     <td>bottom: 24rem; /* 384px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-auto</td>
                     <td>bottom: auto;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-1/2</td>
                     <td>bottom: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-1/3</td>
                     <td>bottom: 33.333333%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-2/3</td>
                     <td>bottom: 66.666667%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-1/4</td>
                     <td>bottom: 25%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-2/4</td>
                     <td>bottom: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-3/4</td>
                     <td>bottom: 75%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>bottom-full</td>
                     <td>bottom: 100%;</td>
                   </tr>
-
-                  <tr></tr>
                 </tbody>
               </table>
               <p>
@@ -4070,10 +3325,8 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>left</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -4086,260 +3339,174 @@
                     <td>left-0</td>
                     <td>left: 0px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-px</td>
                     <td>left: 1px;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-0.5</td>
                     <td>left: 0.125rem; /* 2px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-1</td>
                     <td>left: 0.25rem; /* 4px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-1.5</td>
                     <td>left: 0.375rem; /* 6px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-10</td>
                     <td>left: 2.5rem; /* 40px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-11</td>
                     <td>left: 2.75rem; /* 44px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-12</td>
                     <td>left: 3rem; /* 48px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-14</td>
                     <td>left: 3.5rem; /* 56px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-16</td>
                     <td>left: 4rem; /* 64px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-2</td>
                     <td>left: 0.5rem; /* 8px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-2.5</td>
                     <td>left: 0.625rem; /* 10px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-20</td>
                     <td>left: 5rem; /* 80px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-24</td>
                     <td>left: 6rem; /* 96px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-28</td>
                     <td>left: 7rem; /* 112px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-3</td>
                     <td>left: 0.75rem; /* 12px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-3.5</td>
                     <td>left: 0.875rem; /* 14px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-32</td>
                     <td>left: 8rem; /* 128px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-36</td>
                     <td>left: 9rem; /* 144px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-4</td>
                     <td>left: 1rem; /* 16px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-40</td>
                     <td>left: 10rem; /* 160px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-44</td>
                     <td>left: 11rem; /* 176px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-48</td>
                     <td>left: 12rem; /* 192px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-5</td>
                     <td>left: 1.25rem; /* 20px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-52</td>
                     <td>left: 13rem; /* 208px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-56</td>
                     <td>left: 14rem; /* 224px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-6</td>
                     <td>left: 1.5rem; /* 24px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-60</td>
                     <td>left: 15rem; /* 240px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-64</td>
                     <td>left: 16rem; /* 256px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-7</td>
                     <td>left: 1.75rem; /* 28px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-72</td>
                     <td>left: 18rem; /* 288px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-8</td>
                     <td>left: 2rem; /* 32px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-80</td>
                     <td>left: 20rem; /* 320px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-9</td>
                     <td>left: 2.25rem; /* 36px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-96</td>
                     <td>left: 24rem; /* 384px */</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-auto</td>
                     <td>left: auto;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-1/2</td>
                     <td>left: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-1/3</td>
                     <td>left: 33.333333%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-2/3</td>
                     <td>left: 66.666667%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-1/4</td>
                     <td>left: 25%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-2/4</td>
                     <td>left: 50%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-3/4</td>
                     <td>left: 75%;</td>
                   </tr>
-
-                  <tr></tr>
                   <tr>
                     <td>left-full</td>
                     <td>left: 100%;</td>
                   </tr>
-
-                  <tr></tr>
                 </tbody>
               </table>
               <p>
@@ -4349,8 +3516,7 @@
                 >
               </p>
             </div>
-
-            <div class="content-box">
+            <div class="content-box hidden">
               <h3>visibility</h3>
               <table>
                 <thead>
@@ -4374,7 +3540,6 @@
                   </tr>
                 </tbody>
               </table>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/visibility"
@@ -4384,9 +3549,8 @@
                 >
               </p>
             </div>
-            <div class="content-box">
-              <h3>z-Index</h3>
-
+            <div class="content-box hidden">
+              <h3>z-index</h3>
               <table>
                 <thead>
                   <tr>
@@ -4436,7 +3600,6 @@
             </div>
             <div class="content-box hidden">
               <h3>flex basis</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -4710,7 +3873,6 @@
             </div>
             <div class="content-box hidden">
               <h3>flex direction</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -4746,7 +3908,6 @@
             </div>
             <div class="content-box hidden">
               <h3>flex wrap</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -4780,7 +3941,6 @@
             </div>
             <div class="content-box hidden">
               <h3>flex</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -4818,7 +3978,6 @@
             </div>
             <div class="content-box hidden">
               <h3>flex grow</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -4848,7 +4007,6 @@
             </div>
             <div class="content-box hidden">
               <h3>flex shrink</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -4878,7 +4036,6 @@
             </div>
             <div class="content-box hidden">
               <h3>order</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -4960,7 +4117,6 @@
             </div>
             <div class="content-box hidden">
               <h3>grid template columns</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -5036,7 +4192,6 @@
             </div>
             <div class="content-box hidden">
               <h3>grid column start / end</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -5226,7 +4381,6 @@
             </div>
             <div class="content-box hidden">
               <h3>grid template rows</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -5302,7 +4456,6 @@
             </div>
             <div class="content-box hidden">
               <h3>grid row start / end</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -5492,7 +4645,6 @@
             </div>
             <div class="content-box hidden">
               <h3>grid auto flow</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -5532,7 +4684,6 @@
             </div>
             <div class="content-box hidden">
               <h3>grid auto columns</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -5568,7 +4719,6 @@
             </div>
             <div class="content-box hidden">
               <h3>grid auto rows</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -5604,7 +4754,6 @@
             </div>
             <div class="content-box hidden">
               <h3>gap</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6046,7 +5195,6 @@
             </div>
             <div class="content-box hidden">
               <h3>justify content</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6098,7 +5246,6 @@
             </div>
             <div class="content-box hidden">
               <h3>justify items</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6136,7 +5283,6 @@
             </div>
             <div class="content-box hidden">
               <h3>justify self</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6178,7 +5324,6 @@
             </div>
             <div class="content-box hidden">
               <h3>align content</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6236,7 +5381,6 @@
             </div>
             <div class="content-box hidden">
               <h3>align items</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6278,7 +5422,6 @@
             </div>
             <div class="content-box hidden">
               <h3>align self</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6324,7 +5467,6 @@
             </div>
             <div class="content-box hidden">
               <h3>place content</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6378,7 +5520,6 @@
             </div>
             <div class="content-box hidden">
               <h3>place items</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6420,7 +5561,6 @@
             </div>
             <div class="content-box hidden">
               <h3>place self</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -6462,7 +5602,6 @@
             </div>
             <div class="content-box hidden">
               <h3>padding</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -8014,7 +7153,6 @@
             </div>
             <div class="content-box hidden">
               <h3>margin</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -9580,7 +8718,6 @@
             </div>
             <div class="content-box hidden">
               <h3>space between</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -10095,7 +9232,6 @@
                   </tr>
                 </tbody>
               </table>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/space"
@@ -10107,7 +9243,6 @@
             </div>
             <div class="content-box hidden">
               <h3>width</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -10409,7 +9544,6 @@
             </div>
             <div class="content-box hidden">
               <h3>min-width</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -10587,7 +9721,6 @@
             </div>
             <div class="content-box hidden">
               <h3>max-width</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -10837,7 +9970,6 @@
             </div>
             <div class="content-box hidden">
               <h3>height</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -11095,7 +10227,6 @@
             </div>
             <div class="content-box hidden">
               <h3>min-Height</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -11289,7 +10420,6 @@
             </div>
             <div class="content-box hidden">
               <h3>max-Height</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -11487,7 +10617,6 @@
             </div>
             <div class="content-box hidden">
               <h3>size</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -11892,7 +11021,6 @@
             </div>
             <div class="content-box hidden">
               <h3>font family</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -11936,7 +11064,6 @@
             </div>
             <div class="content-box hidden">
               <h3>font size</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12049,7 +11176,6 @@
             </div>
             <div class="content-box hidden">
               <h3>font smoothing</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12083,7 +11209,6 @@
             </div>
             <div class="content-box hidden">
               <h3>font style</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12113,7 +11238,6 @@
             </div>
             <div class="content-box hidden">
               <h3>font weight</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12171,7 +11295,6 @@
             </div>
             <div class="content-box hidden">
               <h3>font variant numeric</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12227,7 +11350,6 @@
             </div>
             <div class="content-box hidden">
               <h3>letter spacing</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12271,7 +11393,6 @@
             </div>
             <div class="content-box hidden">
               <h3>line clamp</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12342,7 +11463,6 @@
             </div>
             <div class="content-box hidden">
               <h3>line height</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12420,7 +11540,6 @@
             </div>
             <div class="content-box hidden">
               <h3>list style image</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12444,7 +11563,6 @@
             </div>
             <div class="content-box hidden">
               <h3>list style position</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12472,7 +11590,6 @@
             </div>
             <div class="content-box hidden">
               <h3>list style type</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12504,7 +11621,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text align</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -12550,7 +11666,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -14301,7 +13416,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text decoration</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -14337,7 +13451,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text decoration color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15345,7 +14458,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text decoration style</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15385,7 +14497,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text decoration thickness</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15433,7 +14544,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text underline offset</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15477,7 +14587,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text transform</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15513,7 +14622,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text overflow</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15550,7 +14658,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text wrap</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15588,7 +14695,6 @@
             </div>
             <div class="content-box hidden">
               <h3>text indent</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15750,7 +14856,6 @@
             </div>
             <div class="content-box hidden">
               <h3>vertical align</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15802,7 +14907,6 @@
             </div>
             <div class="content-box hidden">
               <h3>whitespace</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15848,7 +14952,6 @@
             </div>
             <div class="content-box hidden">
               <h3>word break</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15886,7 +14989,6 @@
             </div>
             <div class="content-box hidden">
               <h3>hyphens</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15920,7 +15022,6 @@
             </div>
             <div class="content-box hidden">
               <h3>content</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15946,7 +15047,6 @@
             </div>
             <div class="content-box hidden">
               <h3>background attachment</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -15978,7 +15078,6 @@
             </div>
             <div class="content-box hidden">
               <h3>background clip</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -16014,7 +15113,6 @@
             </div>
             <div class="content-box hidden">
               <h3>background color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -17022,7 +16120,6 @@
             </div>
             <div class="content-box hidden">
               <h3>background origin</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -17054,7 +16151,6 @@
             </div>
             <div class="content-box hidden">
               <h3>background position</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -17110,7 +16206,6 @@
             </div>
             <div class="content-box hidden">
               <h3>background repeat</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -17154,7 +16249,6 @@
             </div>
             <div class="content-box hidden">
               <h3>background size</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -17186,7 +16280,6 @@
             </div>
             <div class="content-box hidden">
               <h3>background image</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -17266,7 +16359,6 @@
             </div>
             <div class="content-box hidden">
               <h3>gradient color stops</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -23713,7 +22805,6 @@
             </div>
             <div class="content-box hidden">
               <h3>border radius</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -24596,7 +23687,6 @@
                   </tr>
                 </tbody>
               </table>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/border-radius"
@@ -24608,7 +23698,6 @@
             </div>
             <div class="content-box hidden">
               <h3>border width</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -24810,7 +23899,6 @@
             </div>
             <div class="content-box hidden">
               <h3>border color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -35204,7 +34292,6 @@
             </div>
             <div class="content-box hidden">
               <h3>border style</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -35250,7 +34337,6 @@
             </div>
             <div class="content-box hidden">
               <h3>divide width</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -35356,7 +34442,6 @@
             </div>
             <div class="content-box hidden">
               <h3>divide color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -37107,7 +36192,6 @@
             </div>
             <div class="content-box hidden">
               <h3>divide style</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -37164,7 +36248,6 @@
             </div>
             <div class="content-box hidden">
               <h3>outline width</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -37206,7 +36289,6 @@
             </div>
             <div class="content-box hidden">
               <h3>outline color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -38216,7 +37298,6 @@
             </div>
             <div class="content-box hidden">
               <h3>outline style</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -38260,7 +37341,6 @@
             </div>
             <div class="content-box hidden">
               <h3>outline offset</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -38300,7 +37380,6 @@
             </div>
             <div class="content-box hidden">
               <h3>ring width</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -38368,7 +37447,6 @@
             </div>
             <div class="content-box hidden">
               <h3>ring color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -39378,7 +38456,6 @@
             </div>
             <div class="content-box hidden">
               <h3>ring offset width</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -39438,7 +38515,6 @@
             </div>
             <div class="content-box hidden">
               <h3>ring offset color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -41434,7 +40510,6 @@
             </div>
             <div class="content-box hidden">
               <h3>box shadow</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -41500,7 +40575,6 @@
             </div>
             <div class="content-box hidden">
               <h3>box shadow color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -42508,7 +41582,6 @@
             </div>
             <div class="content-box hidden">
               <h3>opacity</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -42614,7 +41687,6 @@
             </div>
             <div class="content-box hidden">
               <h3>mix blend mode</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -42706,7 +41778,6 @@
             </div>
             <div class="content-box hidden">
               <h3>background blend mode</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -42790,7 +41861,6 @@
             </div>
             <div class="content-box hidden">
               <h3>blur</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -42844,7 +41914,6 @@
             </div>
             <div class="content-box hidden">
               <h3>brightness</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -42910,7 +41979,6 @@
             </div>
             <div class="content-box hidden">
               <h3>contrast</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -42960,7 +42028,6 @@
             </div>
             <div class="content-box hidden">
               <h3>drop shadow</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43022,7 +42089,6 @@
             </div>
             <div class="content-box hidden">
               <h3>grayscale</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43052,7 +42118,6 @@
             </div>
             <div class="content-box hidden">
               <h3>hue rotate</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43098,7 +42163,6 @@
             </div>
             <div class="content-box hidden">
               <h3>invert</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43128,7 +42192,6 @@
             </div>
             <div class="content-box hidden">
               <h3>saturate</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43170,7 +42233,6 @@
             </div>
             <div class="content-box hidden">
               <h3>sepia</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43200,7 +42262,6 @@
             </div>
             <div class="content-box hidden">
               <h3>backdrop blur</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43254,7 +42315,6 @@
             </div>
             <div class="content-box hidden">
               <h3>backdrop brightness</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43318,7 +42378,6 @@
             </div>
             <div class="content-box hidden">
               <h3>backdrop contrast</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43366,7 +42425,6 @@
             </div>
             <div class="content-box hidden">
               <h3>backdrop grayscale</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43394,7 +42452,6 @@
             </div>
             <div class="content-box hidden">
               <h3>backdrop hue rotate</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43438,7 +42495,6 @@
             </div>
             <div class="content-box hidden">
               <h3>backdrop invert</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43466,7 +42522,6 @@
             </div>
             <div class="content-box hidden">
               <h3>backdrop opacity</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43570,7 +42625,6 @@
             </div>
             <div class="content-box hidden">
               <h3>backdrop saturate</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43610,7 +42664,6 @@
             </div>
             <div class="content-box hidden">
               <h3>backdrop sepia</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43638,7 +42691,6 @@
             </div>
             <div class="content-box hidden">
               <h3>border collapse</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -43657,7 +42709,6 @@
                   </tr>
                 </tbody>
               </table>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/border-collapse"
@@ -43667,7 +42718,6 @@
             </div>
             <div class="content-box hidden">
               <h3>border spacing</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44114,7 +43164,6 @@
                   </tr>
                 </tbody>
               </table>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/border-spacing"
@@ -44124,7 +43173,6 @@
             </div>
             <div class="content-box hidden">
               <h3>table layout</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44143,7 +43191,6 @@
                   </tr>
                 </tbody>
               </table>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/table-layout"
@@ -44155,7 +43202,6 @@
             </div>
             <div class="content-box hidden">
               <h3>caption side</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44174,7 +43220,6 @@
                   </tr>
                 </tbody>
               </table>
-
               <p>
                 参考元：<br /><a
                   href="https://tailwindcss.com/docs/caption-side"
@@ -44186,7 +43231,6 @@
             </div>
             <div class="content-box hidden">
               <h3>transition property</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44259,7 +43303,6 @@
             </div>
             <div class="content-box hidden">
               <h3>transition duration</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44315,7 +43358,6 @@
             </div>
             <div class="content-box hidden">
               <h3>transition timing function</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44357,7 +43399,6 @@
             </div>
             <div class="content-box hidden">
               <h3>transition delay</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44413,7 +43454,6 @@
             </div>
             <div class="content-box hidden">
               <h3>animation</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44473,7 +43513,6 @@
             </div>
             <div class="content-box hidden">
               <h3>scale</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44615,7 +43654,6 @@
             </div>
             <div class="content-box hidden">
               <h3>rotate</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -44673,7 +43711,6 @@
             </div>
             <div class="content-box hidden">
               <h3>translate</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -45031,7 +44068,6 @@
             </div>
             <div class="content-box hidden">
               <h3>skew</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -45101,7 +44137,6 @@
             </div>
             <div class="content-box hidden">
               <h3>transform origin</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -45157,7 +44192,6 @@
             </div>
             <div class="content-box hidden">
               <h3>accent color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -46171,7 +45205,6 @@
             </div>
             <div class="content-box hidden">
               <h3>appearance</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -46201,7 +45234,6 @@
             </div>
             <div class="content-box hidden">
               <h3>cursor</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -46367,7 +45399,6 @@
             </div>
             <div class="content-box hidden">
               <h3>caret color</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -47377,7 +46408,6 @@
             </div>
             <div class="content-box hidden">
               <h3>pointer events</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -47405,7 +46435,6 @@
             </div>
             <div class="content-box hidden">
               <h3>resize</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -47443,7 +46472,6 @@
             </div>
             <div class="content-box hidden">
               <h3>scroll behavior</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -47471,7 +46499,6 @@
             </div>
             <div class="content-box hidden">
               <h3>scroll margin</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -49255,7 +48282,6 @@
             </div>
             <div class="content-box hidden">
               <h3>scroll padding</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -51129,7 +50155,6 @@
             </div>
             <div class="content-box hidden">
               <h3>scroll snap align</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -51165,7 +50190,6 @@
             </div>
             <div class="content-box hidden">
               <h3>scroll snap stop</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -51193,7 +50217,6 @@
             </div>
             <div class="content-box hidden">
               <h3>scroll snap type</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -51243,7 +50266,6 @@
             </div>
             <div class="content-box hidden">
               <h3>touch action</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -51305,7 +50327,6 @@
             </div>
             <div class="content-box hidden">
               <h3>user select</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -51343,7 +50364,6 @@
             </div>
             <div class="content-box hidden">
               <h3>will change</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -51381,7 +50401,6 @@
             </div>
             <div class="content-box hidden">
               <h3>fill</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -52395,7 +51414,6 @@
             </div>
             <div class="content-box hidden">
               <h3>stroke</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -53409,7 +52427,6 @@
             </div>
             <div class="content-box hidden">
               <h3>stroke width</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -53443,7 +52460,6 @@
             </div>
             <div class="content-box hidden">
               <h3>screen readers</h3>
-
               <table>
                 <thead>
                   <tr>
@@ -53479,7 +52495,6 @@
             </div>
             <div class="content-box hidden">
               <h3>forced color adjust</h3>
-
               <table>
                 <thead>
                   <tr>
