@@ -83,6 +83,9 @@ const ColorTiles = (selectedColorType: State<string>): HTMLDivElement => {
             class: `color-tile block rounded bg-${name}-${number} cursor-pointer hover:ring-2 ring-offset-1 text-center text-${name}-${adjustColorNumber(
               number
             )} py-1 w-[4em] text-xs sm:text-sm md:text-md`,
+            role: "button",
+            tabindex: "0",
+            "aria-label": "Copy this color name class",
             onclick: clickHandler,
             "data-color-suffix": `-${name}-${number}`,
           },
