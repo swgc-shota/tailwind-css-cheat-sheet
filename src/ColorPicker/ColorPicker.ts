@@ -71,8 +71,8 @@ const ColorTiles = (selectedColorType: State<string>): HTMLDivElement => {
         {
           class: `w-[4em] rounded text-center text-${name}-800 bg-${name}-100`,
         },
-        name,
-      ),
+        name
+      )
     );
     for (let number of colorNumbers) {
       van.add(
@@ -81,7 +81,7 @@ const ColorTiles = (selectedColorType: State<string>): HTMLDivElement => {
           {
             title: `bg-${name}-${number}`,
             class: `color-tile block rounded bg-${name}-${number} cursor-pointer hover:ring-2 ring-offset-1 text-center text-${name}-${adjustColorNumber(
-              number,
+              number
             )} py-1 w-[4em] text-xs sm:text-sm md:text-md`,
             role: "button",
             tabindex: "0",
@@ -89,8 +89,8 @@ const ColorTiles = (selectedColorType: State<string>): HTMLDivElement => {
             onclick: clickHandler,
             "data-color-suffix": `-${name}-${number}`,
           },
-          number,
-        ),
+          number
+        )
       );
     }
     van.add(Container, Row);
@@ -128,12 +128,13 @@ const ColorTypeOptions = (selectedColorType: State<string>): HTMLDivElement => {
           type: "radio",
           name: "colorType",
           value: type,
+          tabIndex: 0,
           checked: () => selectedColorType.val === type,
           onchange: () => (selectedColorType.val = type),
         }),
-        type,
-      ),
-    ),
+        type
+      )
+    )
   );
 };
 
@@ -145,8 +146,8 @@ export const ColorPicker = (): HTMLDivElement => {
     ColorTypeOptions(selectedColorType),
     p(
       { class: "text-sm mt-2" },
-      "各セルをクリックすると、選択中の接頭辞に対応する色のクラス名がコピーされます。",
+      "各セルをクリックすると、選択中の接頭辞に対応する色のクラス名がコピーされます。"
     ),
-    ColorTiles(selectedColorType),
+    ColorTiles(selectedColorType)
   );
 };
