@@ -128,7 +128,7 @@ const ColorTypeOptions = (selectedColorType: State<string>): HTMLDivElement => {
           type: "radio",
           name: "colorType",
           value: type,
-          tabIndex: 0,
+          tabindex: 0,
           checked: () => selectedColorType.val === type,
           onchange: () => (selectedColorType.val = type),
         }),
