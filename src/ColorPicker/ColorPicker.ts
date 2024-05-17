@@ -1,5 +1,5 @@
 import van, { State } from "vanjs-core";
-
+import { doCopyTextContent } from "../utils";
 const { div, h2, label, input, p } = van.tags;
 
 const colorNumbers = Array.from({ length: 10 }, (_, i) => {
@@ -43,24 +43,27 @@ const ColorTiles = (selectedColorType: State<string>): HTMLDivElement => {
     class: "flex flex-col gap-1 mt-4 w-min-11/12 overflow-x-auto py-2",
   });
 
+  const doCopy = (e: Event) => {
+    if (e.target === null) {
+      return;
+    }
+    const target = e.target as HTMLElement;
+    doCopyTextContent(target, () => {
+      const tile = target as HTMLDivElement;
+      const suffix = tile.getAttribute("data-color-suffix") as string;
+      return selectedColorType.val + suffix;
+    });
+  };
+
+  const keydownHandler = (e: KeyboardEvent) => {
+    if (e.key !== "Enter") {
+      return;
+    }
+    doCopy(e);
+  };
+
   const clickHandler = (e: Event) => {
-    const tile = e.target as HTMLDivElement;
-    const originalText = tile.textContent as string;
-    const suffix = tile.getAttribute("data-color-suffix") as string;
-
-    navigator.clipboard
-      .writeText(selectedColorType.val + suffix)
-      .then(() => {
-        tile.textContent = "Copied!";
-      })
-      .catch((err) => {
-        console.error(err);
-        tile.textContent = "Failed!";
-      });
-
-    setTimeout(() => {
-      tile.textContent = originalText;
-    }, 500);
+    doCopy(e);
   };
 
   for (let name of colorNames) {
@@ -87,6 +90,7 @@ const ColorTiles = (selectedColorType: State<string>): HTMLDivElement => {
             tabindex: "0",
             "aria-label": "Copy this color name class",
             onclick: clickHandler,
+            onkeydown: keydownHandler,
             "data-color-suffix": `-${name}-${number}`,
           },
           number
