@@ -1,7 +1,7 @@
 export const initLazyShowing = (
   showTargetSelector: string = "div.hidden",
   removeClass: string = "hidden",
-  numberPerShow: number = 100,
+  numberPerShow: number = 100
 ) => {
   const onScroll = () => {
     const params = new URLSearchParams(window.location.search);
@@ -13,7 +13,7 @@ export const initLazyShowing = (
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
     if (scrollTop + clientHeight >= scrollHeight - 100) {
       const hiddenItems = Array.from(
-        document.querySelectorAll(showTargetSelector),
+        document.querySelectorAll(showTargetSelector)
       ).slice(0, numberPerShow) as HTMLDivElement[];
       hiddenItems.forEach((item) => {
         item.classList.remove(removeClass);
@@ -29,24 +29,48 @@ export const initLazyShowing = (
 };
 
 export const initCopyClassName = () => {
-  const copyClassName = (e: MouseEvent) => {
+  const cheatsheetContent = document.querySelector(
+    ".cheatsheet-content"
+  ) as HTMLDivElement;
+
+  cheatsheetContent.addEventListener("click", (e: MouseEvent) => {
     const target = e.target as HTMLElement;
     if (target.tagName !== "TD") {
       return;
     }
-    copyTextFromDom(target);
-  };
-  const cheatsheetContent = document.querySelector(
-    ".cheatsheet-content",
-  ) as HTMLDivElement;
-  cheatsheetContent.addEventListener("click", copyClassName);
+    doCopyTextContent(target);
+  });
+
+  cheatsheetContent.addEventListener("keydown", (e: KeyboardEvent) => {
+    const target = e.target as HTMLElement;
+    if (target.tagName !== "TD" || e.key !== "Enter") {
+      return;
+    }
+    doCopyTextContent(target);
+  });
 };
 
-const copyTextFromDom = (target: HTMLElement) => {
-  const originalText = target.textContent as string;
+/**
+ * Copies the text content of a given HTML element to the clipboard.
+ * Optionally, a function can be provided to generate the text before copying.
+ * After copying, the element's text content is temporarily changed to indicate success or failure.
+ *
+ * @param {HTMLElement} target - The target HTML element whose text content is to be copied.
+ * @param {() => string} [generateCopyText] - An optional function to generate the text content before copying. If not provided, the original text content is copied.
+ */
+export const doCopyTextContent = (
+  target: HTMLElement,
+  generateCopyText?: () => string
+) => {
+  const originalText = (target.textContent as string)
+    .replace(/\/\*[\s\S]*?\*\//, "")
+    .replace("> * + *", "")
+    .trim();
+  const copyText =
+    generateCopyText !== undefined ? generateCopyText() : originalText;
 
   navigator.clipboard
-    .writeText(originalText)
+    .writeText(copyText)
     .then(() => {
       target.textContent = "Copied!";
     })
@@ -68,7 +92,7 @@ const copyTextFromDom = (target: HTMLElement) => {
  */
 export function debouncer<T extends (...args: any[]) => void>(
   func: T,
-  delay: number,
+  delay: number
 ): (...args: Parameters<T>) => Promise<void> {
   let timeoutId: ReturnType<typeof setTimeout> | null = null;
   let resolvePrevious: () => void = () => {};
