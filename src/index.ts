@@ -1,7 +1,7 @@
 import van from "vanjs-core";
 import { ViewSwitcher } from "./ViewSwitcher/ViewSwitcher";
 import { ColorPicker } from "./ColorPicker/ColorPicker";
-import { TWPlayground } from "./TWPlayground/TWPlayground";
+import { Playground } from "./Playground/Playground";
 import { initClassNameFinder } from "./ClassNameFinder/ClassNameFinder";
 import { initLazyShowing } from "./utils";
 import { initCopyClassName } from "./utils";
@@ -21,7 +21,7 @@ van.add(colorPickerView, ColorPicker());
 const twPlaygroundContainer = document.querySelector(
   ".playground-view"
 ) as HTMLElement;
-van.add(twPlaygroundContainer, TWPlayground());
+van.add(twPlaygroundContainer, Playground());
 
 initClassNameFinder();
 
