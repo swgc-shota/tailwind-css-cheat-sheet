@@ -3,7 +3,7 @@ const { div } = van.tags;
 
 export const Resizable = (
   child: HTMLElement,
-  options = { width: 373, height: 665 },
+  options = { width: 373, height: 665 }
 ) => {
   const width = van.state(options.width);
   const height = van.state(options.height);
@@ -14,16 +14,35 @@ export const Resizable = (
     startY = 0,
     startHeight = 0;
 
+  const handleStart = (clientX: number, clientY: number) => {
+    startX = clientX;
+    startWidth = width.val;
+    startY = clientY;
+    startHeight = height.val;
+  };
+
+  const handleMove = (clientX: number, clientY: number) => {
+    if (resizeType === "ns-resize") {
+      const newHeight = startHeight + clientY - startY;
+      height.val = newHeight > 50 ? newHeight : 50;
+    } else if (resizeType === "ew-resize") {
+      const newWidth = startWidth + (clientX - startX) * 2;
+      width.val = newWidth > 50 ? newWidth : 50;
+    } else if (resizeType === "nwse-resize") {
+      const newWidth = startWidth + (clientX - startX) * 2;
+      width.val = newWidth > 50 ? newWidth : 50;
+      const newHeight = startHeight + clientY - startY;
+      height.val = newHeight > 50 ? newHeight : 50;
+    }
+  };
+
   const handleMousedown = (e: MouseEvent) => {
     const target = e.target as HTMLElement;
     if (target === null) {
       return;
     }
     resizeType = getComputedStyle(target).cursor;
-    startX = e.clientX;
-    startWidth = width.val;
-    startY = e.clientY;
-    startHeight = height.val;
+    handleStart(e.clientX, e.clientY);
     e.preventDefault();
 
     const mask = document.querySelector(".mousemove-catcher-for-iframe");
@@ -34,19 +53,30 @@ export const Resizable = (
     window.addEventListener("mouseout", handleMouseoutForWindow);
   };
 
-  const handleMousemove = (e: MouseEvent) => {
-    if (resizeType === "ns-resize") {
-      const newHeight = startHeight + e.clientY - startY;
-      height.val = newHeight > 50 ? newHeight : 50;
-    } else if (resizeType === "ew-resize") {
-      const newWidth = startWidth + (e.clientX - startX) * 2;
-      width.val = newWidth > 50 ? newWidth : 50;
-    } else if (resizeType === "nwse-resize") {
-      const newWidth = startWidth + (e.clientX - startX) * 2;
-      width.val = newWidth > 50 ? newWidth : 50;
-      const newHeight = startHeight + e.clientY - startY;
-      height.val = newHeight > 50 ? newHeight : 50;
+  const handleTouchstart = (e: TouchEvent) => {
+    const target = e.target as HTMLElement;
+    if (target === null) {
+      return;
     }
+    resizeType = getComputedStyle(target).cursor;
+    const touch = e.touches[0];
+    handleStart(touch.clientX, touch.clientY);
+    e.preventDefault();
+
+    const mask = document.querySelector(".mousemove-catcher-for-iframe");
+    mask?.classList.add("z-10");
+
+    document.addEventListener("touchmove", handleTouchmove);
+    document.addEventListener("touchend", handleTouchend);
+  };
+
+  const handleMousemove = (e: MouseEvent) => {
+    handleMove(e.clientX, e.clientY);
+  };
+
+  const handleTouchmove = (e: TouchEvent) => {
+    const touch = e.touches[0];
+    handleMove(touch.clientX, touch.clientY);
   };
 
   const handleMouseup = () => {
@@ -58,6 +88,16 @@ export const Resizable = (
     document.removeEventListener("mousemove", handleMousemove);
     document.removeEventListener("mouseup", handleMouseup);
     window.removeEventListener("mouseout", handleMouseoutForWindow);
+  };
+
+  const handleTouchend = () => {
+    resizeType = "";
+
+    const mask = document.querySelector(".mousemove-catcher-for-iframe");
+    mask?.classList.remove("z-10");
+
+    document.removeEventListener("touchmove", handleTouchmove);
+    document.removeEventListener("touchend", handleTouchend);
   };
 
   const handleMouseoutForWindow = (e: MouseEvent) => {
@@ -92,12 +132,14 @@ export const Resizable = (
         class:
           "absolute left-0 bottom-0 w-[95%] h-full hover:cursor-ns-resize z-20",
         onmousedown: handleMousedown,
+        ontouchstart: handleTouchstart,
       }),
       div({
         class:
           "absolute right-0 bottom-0 w-[5%] h-full hover:cursor-nwse-resize z-20",
         onmousedown: handleMousedown,
-      }),
+        ontouchstart: handleTouchstart,
+      })
     ),
     div(
       {
@@ -107,12 +149,14 @@ export const Resizable = (
         class:
           "absolute top-0 right-0 w-full h-[95%] hover:cursor-ew-resize z-20",
         onmousedown: handleMousedown,
+        ontouchstart: handleTouchstart,
       }),
       div({
         class:
           "absolute bottom-0 right-0 w-full h-[5%] hover:cursor-nwse-resize z-20",
         onmousedown: handleMousedown,
-      }),
+        ontouchstart: handleTouchstart,
+      })
     ),
     div({
       class:
@@ -121,7 +165,7 @@ export const Resizable = (
     div(
       { class: "absolute top-0 left-0 w-full h-full" },
 
-      child,
-    ),
+      child
+    )
   );
 };
