@@ -6,6 +6,7 @@ import { initClassNameFinder } from "./ClassNameFinder/ClassNameFinder";
 import { initLazyShowing } from "./utils";
 import { initCopyClassName } from "./utils";
 import { initThemeToggler } from "./Common/ThemeToggler";
+import { Footer } from "./Common/Footer";
 import "./index.css";
 
 const switchContainer = document.querySelector(
@@ -13,20 +14,25 @@ const switchContainer = document.querySelector(
 ) as HTMLElement;
 van.add(switchContainer, ViewSwitcher());
 
+const cheatSheetView = document.querySelector(
+  ".cheatsheet-view"
+) as HTMLElement;
+van.add(cheatSheetView, Footer());
+
 const colorPickerView = document.querySelector(
   ".colorpicker-view"
 ) as HTMLElement;
-van.add(colorPickerView, ColorPicker());
+van.add(colorPickerView, ColorPicker(), Footer());
 
 const playgroundContainer = document.querySelector(
   ".playground-view"
 ) as HTMLElement;
-van.add(playgroundContainer, Playground());
+van.add(playgroundContainer, Playground(), Footer());
 
 initClassNameFinder();
-
-initLazyShowing(".content-box.hidden", "hidden", 30);
 
 initCopyClassName();
 
 initThemeToggler();
+
+initLazyShowing(".content-box.hidden", "hidden", 30);

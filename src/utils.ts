@@ -8,12 +8,11 @@ export const initLazyShowing = (
   ) as HTMLElement;
 
   const onScroll = () => {
-    /*
     const params = new URLSearchParams(window.location.search);
     const isNotCheatsheetView = (params.get("view") as string | null) !== null;
     if (isNotCheatsheetView) {
       return;
-    }*/
+    }
 
     const { scrollTop, scrollHeight, clientHeight } = scrollContainer;
     if (scrollTop + clientHeight >= scrollHeight - 100) {
