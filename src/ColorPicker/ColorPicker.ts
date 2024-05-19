@@ -145,7 +145,7 @@ const ColorTypeOptions = (selectedColorType: State<string>): HTMLDivElement => {
 export const ColorPicker = (): HTMLDivElement => {
   const selectedColorType = van.state("bg");
   return div(
-    { class: "w-full sm:w-[664px] m-auto mt-16 px-4 sm:px-0" },
+    { class: "w-full sm:w-[664px] m-auto my-16 px-4 sm:px-0" },
     h2({ class: "font-bold" }, "色見本"),
     ColorTypeOptions(selectedColorType),
     p(

@@ -32,7 +32,7 @@ export const Playground = () => {
   initEditor(EditorContainer, htmlContent);
 
   return div(
-    { class: "mt-16 w-full overflow-x-auto" },
+    { class: "my-16 w-full overflow-x-auto" },
     Resizable(previewFrame, { width: window.innerWidth * 0.95, height: 440 }),
     EditorContainer
   );
