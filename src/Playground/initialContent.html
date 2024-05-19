@@ -1,79 +1,64 @@
 <body class="dark:bg-slate-900 dark:text-slate-300">
-  <header class="dark:bg-slate-900">
-    <div class="container m-auto p-2 sm:p-4 flex">
-      <hgroup class="flex flex-row-reverse justify-end">
-        <h1 class="ml-2 font-bold">
-          こんにちは、ようこそ<span class="inline-block animate-bounce"
-            >。</span
-          >
-        </h1>
-        <div
-          class="flex items-center justify-center size-6 sm:size-7 rounded-full fill-slate-700 dark:fill-slate-300 dark:stroke-slate-300 stroke-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600"
+  <div class="container m-auto p-2 sm:p-4 flex">
+    <hgroup class="flex flex-row-reverse justify-end">
+      <h1 class="ml-2 font-bold">
+        こんにちは、ようこそ<span class="inline-block animate-bounce">。</span>
+      </h1>
+      <div
+        class="flex items-center justify-center size-6 sm:size-7 rounded-full fill-slate-700 dark:fill-slate-300 dark:stroke-slate-300 stroke-slate-700 hover:bg-slate-100 dark:hover:bg-slate-600"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-5"
+          width="42"
+          height="34"
+          viewBox="0 0 42 34"
+          role="img"
+          aria-labelledby="svg-title svg-desc"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="size-5"
-            width="42"
-            height="34"
-            viewBox="0 0 42 34"
-            role="img"
-            aria-labelledby="svg-title svg-desc"
-          >
-            <circle cx="4" cy="4" r="4" fill=""></circle>
-            <circle cx="38" cy="4" r="4" fill=""></circle>
-            <path
-              d="M8 33C8 33 20 -30 34 33"
-              stroke=""
-              fill="none"
-              stroke-width="5"
-            ></path>
-          </svg>
-        </div>
-      </hgroup>
-    </div>
-  </header>
-  <main>
-    <div
-      class="container border shadow rounded-xl m-auto text-sm sm:text-md p-4"
-    >
-      <div class="p-4">
-        <h2 class="font-bold font-md">このプレイグラウンドの使い方</h2>
-        <p class="mt-2 sm:mt-4">
-          説明が必要なほど複雑なものではありませんが、サンプル用のテキストが欲しいので適当に書き散らかしたいと思います。
-        </p>
-        <ul class="mt-2 sm:mt-4 space-y-1 sm:space-y-2 list-disc pl-4 text-sm">
-          <li>
-            下のエディタにHTMLを入力すると、その内容に基づいてこのプレビューが更新されます。
-          </li>
-          <li>
-            プレビューは右端と左端、エディタは右下をドラッグするとサイズを変更できます。
-          </li>
-          <li>
-            HTMLタグにdarkクラスを追加する形で、<code
-              class="bg-gray-200 dark:bg-gray-600 rounded font-bold before:content-['\`'] after:content-['\`']"
-              >dark:</code
-            >接頭辞をサポートしています。
-          </li>
-          <li>
-            設定のカスタムはできません。設定まで含めて試されたい場合は、公式のプレイグラウンド（https://play.tailwindcss.com/）を使われると良いかと思います。
-          </li>
-
-          <li>
-            このページをダークモードにすると、プレビューもダークモードになります。
-          </li>
-          <li>ご意見やアドバイスなどをいただけると喜びます。</li>
-          <li>
-            恐れ入りますが、何か問題が起こっても責任は取れません。ご承知おきください。
-          </li>
-        </ul>
+          <circle cx="4" cy="4" r="4" fill=""></circle>
+          <circle cx="38" cy="4" r="4" fill=""></circle>
+          <path
+            d="M8 33C8 33 20 -30 34 33"
+            stroke=""
+            fill="none"
+            stroke-width="5"
+          ></path>
+        </svg>
       </div>
+    </hgroup>
+  </div>
+  <div class="container border shadow rounded-xl m-auto text-sm sm:text-md p-4">
+    <div class="p-4">
+      <h2 class="font-bold font-md">このプレイグラウンドの使い方</h2>
+      <p class="mt-2 sm:mt-4">
+        説明が必要なほど複雑なものではありませんが、サンプル用のテキストが欲しいので適当に書き散らかしたいと思います。
+      </p>
+      <ul class="mt-2 sm:mt-4 space-y-1 sm:space-y-2 list-disc pl-4 text-sm">
+        <li>
+          下のエディタにHTMLを入力すると、その内容に基づいてこのプレビューが更新されます。
+        </li>
+        <li>
+          プレビューは右端と左端、エディタは右下をドラッグするとサイズを変更できます。
+        </li>
+        <li>
+          HTMLタグにdarkクラスを追加する形で、<code
+            class="bg-gray-200 dark:bg-gray-600 rounded font-bold before:content-['\`'] after:content-['\`']"
+            >dark:</code
+          >接頭辞をサポートしています。
+        </li>
+        <li>
+          設定のカスタムはできません。設定まで含めて試されたい場合は、公式のプレイグラウンド（https://play.tailwindcss.com/）を使われると良いかと思います。
+        </li>
+
+        <li>
+          このページをダークモードにすると、プレビューもダークモードになります。
+        </li>
+        <li>ご意見やアドバイスなどをいただけると喜びます。</li>
+        <li>
+          恐れ入りますが、何か問題が起こっても責任は取れません。ご承知おきください。
+        </li>
+      </ul>
     </div>
-  </main>
-  <footer>
-    <p
-      class="block text-blue-700 dark:text-blue-300 text-sm my-8 text-center underline hover:no-underline"
-    >
-      読了感謝！
-    </p>
-  </footer>
+  </div>
 </body>
