@@ -34,7 +34,9 @@ export const initCopyClassName = () => {
   ) as HTMLDivElement;
 
   cheatsheetContent.addEventListener("click", (e: MouseEvent) => {
-    const target = e.target as HTMLElement;
+    const _ = e.target as HTMLElement;
+    const target = _.tagName !== "MARK" ? _ : (_.parentElement as HTMLElement);
+
     if (target.tagName !== "TD") {
       return;
     }
@@ -66,6 +68,7 @@ export const doCopyTextContent = (
     .replace(/\/\*[\s\S]*?\*\//, "")
     .replace("> * + *", "")
     .trim();
+  const cloneDom = target.cloneNode(true);
   const copyText =
     generateCopyText !== undefined ? generateCopyText() : originalText;
 
@@ -80,7 +83,7 @@ export const doCopyTextContent = (
     });
 
   setTimeout(() => {
-    target.textContent = originalText;
+    target.parentElement?.replaceChild(cloneDom, target);
   }, 500);
 };
 
