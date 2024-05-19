@@ -3,14 +3,19 @@ export const initLazyShowing = (
   removeClass: string = "hidden",
   numberPerShow: number = 100
 ) => {
+  const scrollContainer = document.querySelector(
+    ".scroll-container"
+  ) as HTMLElement;
+
   const onScroll = () => {
+    /*
     const params = new URLSearchParams(window.location.search);
     const isNotCheatsheetView = (params.get("view") as string | null) !== null;
     if (isNotCheatsheetView) {
       return;
-    }
+    }*/
 
-    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    const { scrollTop, scrollHeight, clientHeight } = scrollContainer;
     if (scrollTop + clientHeight >= scrollHeight - 100) {
       const hiddenItems = Array.from(
         document.querySelectorAll(showTargetSelector)
@@ -20,12 +25,12 @@ export const initLazyShowing = (
       });
 
       if (hiddenItems.length < numberPerShow) {
-        window.removeEventListener("scroll", onScroll);
+        scrollContainer.removeEventListener("scroll", onScroll);
       }
     }
   };
 
-  window.addEventListener("scroll", onScroll);
+  scrollContainer.addEventListener("scroll", onScroll);
 };
 
 export const initCopyClassName = () => {
