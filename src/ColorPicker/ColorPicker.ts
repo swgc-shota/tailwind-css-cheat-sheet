@@ -105,7 +105,7 @@ const ColorTiles = (selectedColorType: State<string>): HTMLDivElement => {
 
 const ColorTypeOptions = (selectedColorType: State<string>): HTMLDivElement => {
   const colorTypes = [
-    "color",
+    "text",
     "decoration",
     "bg",
     "border",
