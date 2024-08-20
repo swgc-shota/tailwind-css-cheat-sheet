@@ -132,13 +132,13 @@ export const Resizable = (
         class:
           "absolute left-0 bottom-0 w-[95%] h-full hover:cursor-ns-resize z-20",
         onmousedown: handleMousedown,
-        ontouchstart: handleTouchstart,
+        ref: (el) => el && addPassiveTouchStart(el, handleTouchstart),
       }),
       div({
         class:
           "absolute right-0 bottom-0 w-[5%] h-full hover:cursor-nwse-resize z-20",
         onmousedown: handleMousedown,
-        ontouchstart: handleTouchstart,
+        ref: (el) => el && addPassiveTouchStart(el, handleTouchstart),
       })
     ),
     div(
@@ -149,23 +149,26 @@ export const Resizable = (
         class:
           "absolute top-0 right-0 w-full h-[95%] hover:cursor-ew-resize z-20",
         onmousedown: handleMousedown,
-        ontouchstart: handleTouchstart,
+        ref: (el) => el && addPassiveTouchStart(el, handleTouchstart),
       }),
       div({
         class:
           "absolute bottom-0 right-0 w-full h-[5%] hover:cursor-nwse-resize z-20",
         onmousedown: handleMousedown,
-        ontouchstart: handleTouchstart,
+        ref: (el) => el && addPassiveTouchStart(el, handleTouchstart),
       })
     ),
     div({
       class:
         "mousemove-catcher-for-iframe absolute top-0 left-0 w-full h-full opacity-0",
     }),
-    div(
-      { class: "absolute top-0 left-0 w-full h-full" },
-
-      child
-    )
+    div({ class: "absolute top-0 left-0 w-full h-full" }, child)
   );
+};
+
+const addPassiveTouchStart = (
+  el: HTMLElement,
+  handler: (e: TouchEvent) => void
+) => {
+  el.addEventListener("touchstart", handler, { passive: true });
 };
