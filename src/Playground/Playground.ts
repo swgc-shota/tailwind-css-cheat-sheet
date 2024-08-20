@@ -4,12 +4,16 @@ import { initEditor } from "./codemirror";
 import { Resizable } from "./Resizable";
 
 const updateIFrame = (iframe: HTMLIFrameElement, content: string) => {
-  const blob = new Blob([content], { type: "text/html" });
-  const url = URL.createObjectURL(blob);
-  iframe.onload = function () {
-    URL.revokeObjectURL(url);
-  };
-  iframe.src = url;
+  try {
+    const blob = new Blob([content], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    iframe.src = url;
+    iframe.onload = () => {
+      setTimeout(() => URL.revokeObjectURL(url), 0);
+    };
+  } catch (error) {
+    console.error("Failed to update iframe:", error);
+  }
 };
 
 export const Playground = () => {
